@@ -1,0 +1,137 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    color:white;
+}
+/* For Dark Mode CSS Style  */
+body {
+    background-color: white;
+    background-image: url(../images/desktop-light.jpg);
+}
+
+body {
+    min-height: 100%;
+    font-size: 18px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 25vh;
+    font-family: "Josefin Sans", sans-serif;
+}
+.to_do{
+    width:35%;
+    margin: auto; 
+    height: 100%;
+    padding-top: 50px;
+    
+}
+.Theme{
+    height: 13.7rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    
+   
+}
+.Theme .title{
+    display: flex;
+    font-size: 35px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.Theme .input_field{
+    margin-top: 30px;
+}
+.Theme .input_field input{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 2px;
+    padding-left: 40px;
+}
+.Theme .input_field input[type=text] {
+    font-size: 18px;
+    font-weight: 500;
+    background: white;
+    color:black; 
+    box-shadow: 0 5px 40px 10px rgb(0 0 0 / 10%);
+    border-radius: 5%;
+}
+.sun {
+    display: none;
+}
+input::placeholder{
+    color: black;
+}
+input:focus{
+    outline: none;
+}
+ul {
+    box-shadow: 0 5px 40px 10px rgb(0 0 0 / 10%);
+}
+li {
+    display: flex;
+    padding-top: 0.5%;
+    padding-left: 4%;
+    list-style-type: none;
+    font-weight: 300;
+    height: 3rem;
+    border-radius: 0px 5px;
+    text-align: left;
+    color: rgb(72, 75, 106);
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(228, 229, 241);
+    
+}
+/* .check{
+    margin-right: 2%;
+    border-radius: 100%;
+}
+.check:checked::after{
+    background: linear-gradient(140deg, #ff6a6a 0%, #e6ff59 40%, #41c4fc 98%);
+} */
+
+.checkbox:checked {
+    background: linear-gradient(
+160deg, #ff6a6a 0%, #59abff 23%, #c641fc 98%);
+}
+
+.checkbox{
+    -webkit-appearance: none;
+    position: relative;
+    margin-right: 5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: transparent;
+    border: 1px solid #adb1d9;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+input:checked~.task-list-item {
+    text-decoration: line-through
+  }
+
+.checkbox::before{
+    display: none;
+}
+.checkbox:checked::before{
+    display: block;
+}
+
+.results{
+    margin: 0 35%;
+    margin-top: -5%;
+}
+.btns{
+    margin-top: 1rem;
+}
+button {
+    margin-left: 1rem;
+    border: none;
+    color: #cacde8;
+    background: transparent;
+}
+button:focus{
+    color: #3a7bfd;
+}
