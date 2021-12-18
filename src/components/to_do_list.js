@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import setLigtImage from "../images/icon-sun.svg";
 import setDarkImage from "../images/icon-moon.svg";
-import "../style/to_do_list_light.css";
+import  "../style/to_do_list_dark.css";
 
 export default function Header() {
 
@@ -54,14 +54,21 @@ export default function Header() {
     );
     setDataItem(newid);
   }
+//   function toggleTheme() {
+//     if (theme.getAttribute('import') === 'to_do_list_light.css') {
+//         theme.setAttribute('import', 'to_do_list_dark.css');
+//     } else {
+//         theme.setAttribute('import', 'to_do_list_light.css');
+//     }
+// }
 
   return (
     <div className='Theme'>
       <div className="to_do">
         <div className="title">
           <span>todo</span>
-          <span className="sun" ><img src={setLigtImage} alt="" /></span>
-          <span className="moon"><img src={setDarkImage} alt="" /></span>
+          <span className="sun"  onClick="toggleTheme()"  ><a href="#"><img src={setLigtImage} alt="" /></a></span>
+          <span className="moon" onClick="toggleTheme()"  ><a href="#"><img src={setDarkImage} alt="" /></a></span>
         </div>
         <div className="input_field">
           <form onSubmit={add}>
